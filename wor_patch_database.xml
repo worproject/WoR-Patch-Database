@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wor_patch_database>
+    <patch_pack build_min="18362" build_max="20180.1000">
+        <memory_limit>3072</memory_limit>
+        <files>
+            <!--
+                Patch description: 
+                    Read/write xHCI registers through two 32-bit accesses instead of one 64-bit access
+
+                Patch data description:
+                    pair 1: patch for XilRegister_ReadUlong64  -> matches the entire range of builds
+                    pair 2: patch for XilRegister_WriteUlong64 -> matches the entire range of builds
+            -->
+            <file name="Windows\System32\drivers\USBXHCI.SYS">
+                <data>ea000037e8630091 ea000036e8630091 0037e8430091e1 0036e8430091e1</data>
+                <expected_sections>2</expected_sections>
+            </file>
+        </files>
+    </patch_pack>
+</wor_patch_database>
