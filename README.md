@@ -21,6 +21,10 @@ The `wor_patch_database` root element of the XML database is an array of `patch_
 
       **Restrictions:** `build_min` <= `build_max` , and they **must not** have the values of another `patch_pack` element.
       
+    * the `preferred` attribute indicates whether or not the specified build range should be added to the list of recommended build ranges. If it's set to `false` and the selected build of Windows is within the range above, the parser will inform the user that there are builds which have better support.
+
+      **At least one `patch_pack` element must have this attribute set to `true`.**
+
     * the `memory_limit` element represents the RAM limit **(measured in MB)** required for the patched files to work properly.
        
       **This element can be set to `0` if no memory limit is required.**       

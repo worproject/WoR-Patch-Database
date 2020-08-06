@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <wor_patch_database>
-    <patch_pack build_min="18362" build_max="20180.1000">
+    <patch_pack build_min="18362" build_max="20180.1000" preferred="true">
         <memory_limit>3072</memory_limit>
         <files>
             <!--
