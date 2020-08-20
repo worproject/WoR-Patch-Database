@@ -1,16 +1,8 @@
+# Notice
+**This repository is deprecated! USB 3.0 support is fixed in the latest drivers package, so patching is no longer needed.**
+
 # WoR-Patch-Database
 A list of patches that enable some missing features (such as USB 3.0) on a Raspberry Pi 4 device running Windows 10 ARM64.
-
-Note: the [Windows on Raspberry imager](https://www.worproject.ml) will make use of this repository in the next version (2.0.0).
-
-## Contributing
-If you've found that the current patches work on a build of Windows that's not in the specified range, you can report it in a new issue.
-
-If the existing patches do not apply to the build that you're testing, you can open an issue to report that (but fixing it is up to the maintainers / anyone interested), or you can attempt to find the required patch data yourself and send a Pull Request.
-
-This article nicely explains the process of finding patches: https://pete.akeo.ie/2020/07/abusing-microsofts-symbol-servers-for.html
-
-The tool used for patching system files can be found here: https://github.com/pbatard/winpatch
 
 ## About the database
 The `wor_patch_database` root element of the XML database is an array of `patch_pack` elements.
